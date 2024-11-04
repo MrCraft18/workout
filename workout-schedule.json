@@ -1,0 +1,43 @@
+[
+    [],
+    [
+        { "name": "Flat Bench Press", "unit": "kg" },
+        { "name": "Incline Bench Press", "unit": "kg" },
+        { "name": "Overhead Bench Press", "unit": "kg" },
+        { "name": "Skull Crushers", "unit": "kg" },
+        { "name": "Lateral Raises", "unit": "kg" }
+    ],
+    [
+        { "name": "Dumbbell Squats", "unit": "kg" },
+        { "name": "Romanian Deadlifts", "unit": "kg" },
+        { "name": "Dumbbell Lunges", "unit": "kg" },
+        { "name": "Calf Raises", "unit": "kg" },
+        { "name": "Wall Handstand Hold", "noReps": true, "unit": "sec" }
+    ],
+    [
+        { "name": "Weighted Russian Twists", "unit": "kg" },
+        { "name": "Reverse Crunches" },
+        { "name": "Straight Leg Raise" },
+        { "name": "Hip Lift" },
+        { "name": "Seated Knee-Tuck" },
+        { "name": "Decline Sit-Ups", "unit": "kg" }
+    ],
+    [
+        { "name": "Single Arm Rows", "unit": "kg" },
+        { "name": "Pull Ups", "unit": "kg" },
+        { "name": "Overhead Extensions", "unit": "kg" },
+        { "name": "Underhand Rows", "unit": "kg" },
+        { "name": "Bicep Curls", "unit": "kg" },
+        { "name": "Hammer Curls", "unit": "kg" }
+    ],
+    [
+        { "name": "Bulgarian Split Squats", "unit": "kg" },
+        { "name": "Decline Pushups", "unit": "in" },
+        { "name": "Dumbbell Pullovers", "unit": "kg" },
+        { "name": "Pushups" },
+        { "name": "Neutral Grip Rows", "unit": "kg" }
+    ],
+    [
+        { "name": "Wall Handstand Hold", "noReps": true, "unit": "sec" }
+    ]
+]

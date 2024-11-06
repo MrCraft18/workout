@@ -10,12 +10,10 @@
     [
         { "name": "Dumbbell Squats", "unit": "kg" },
         { "name": "Romanian Deadlifts", "unit": "kg" },
-        { "name": "Dumbbell Lunges", "unit": "kg" },
         { "name": "Calf Raises", "unit": "kg" },
         { "name": "Wall Handstand Hold", "noReps": true, "unit": "sec" }
     ],
     [
-        { "name": "Weighted Russian Twists", "unit": "kg" },
         { "name": "Reverse Crunches" },
         { "name": "Straight Leg Raise" },
         { "name": "Hip Lift" },

@@ -103,13 +103,13 @@ if (todaysRoutine.length) {
         }
     }
 
-    console.dir(sessionTable, { depth: null })
-
     const workoutData = JSON.parse(fs.readFileSync('./workout-data.json'))
 
     workoutData.push({ session: sessionTable, date: sessionTable[0].sets[0].startTime })
 
     fs.writeFileSync('./workout-data.json', JSON.stringify(workoutData, null, 4))
+
+    console.log('Finished Workout in: ', timeDuration(sessionTable[0].sets[0].startTime, sessionTable.at(-1).sets.at(-1).endTime))
 } else {
     console.log('No Workout Today')
 }
@@ -184,4 +184,20 @@ function splitNumber(num) {
     const firstPart = Math.floor(num / 2)
     const secondPart = num - firstPart
     return [firstPart, secondPart]
+}
+
+
+function timeDuration(startTimestamp, endTimestamp) {
+    const diffInSeconds = Math.floor((endTimestamp - startTimestamp) / 1000)
+
+    const hours = Math.floor(diffInSeconds / 3600)
+    const minutes = Math.floor((diffInSeconds % 3600) / 60)
+    const seconds = diffInSeconds % 60
+
+    let readableTime = ''
+    if (hours > 0) readableTime += `${hours}hr `
+    if (minutes > 0) readableTime += `${minutes}m `
+    if (seconds > 0) readableTime += `${seconds}sec`
+
+    return readableTime.trim()
 }
